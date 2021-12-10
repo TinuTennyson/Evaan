@@ -13,7 +13,7 @@
 # limitations under the License.
 # [START cloudbuild_maven]
 steps:
-  - name: maven:3-jdk-8
-    entrypoint: mvn
-  - args: ['clean', 'install', '-DskipTests']
+- name: maven:3-jdk-8
+  entrypoint: mvn
+- args: ['clean', 'install', '-DskipTests']
 # [END cloudbuild_maven]
