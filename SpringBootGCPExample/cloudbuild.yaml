@@ -12,8 +12,8 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 # [START cloudbuild_maven]
-steps:
-  - name: maven:3-jdk-8
-    entrypoint: 'mvn'
-    args: ['clean', 'install', '-DskipTests']
+ steps:
+ - name: maven:3-jdk-8
+   entrypoint: mvn
+   args: ['package','-Dmaven.test.skip=true']
 # [END cloudbuild_maven]
